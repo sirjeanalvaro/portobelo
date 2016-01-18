@@ -1,0 +1,41 @@
+/* Um Projeto Codebrains */
+
+
+/* Paciente e Atenciosamente Desenvolvido por: */
+
+
+/* Jean Alvaro */
+
+
+/* Global Config */
+
+@import "reset.css";
+
+/* Final Global Config */
+
+
+/* Inicia o Topo */
+
+.topo {
+  width: 100%;
+  height: 180px;
+  background:url('../img/bg-nav.png') center 136px no-repeat, url('../img/bg-top.png') center center no-repeat;
+  min-width: 940px;
+  background-size: 100% auto;
+}
+
+.topo nav {
+  width: 940px;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0.5);
+  height: 75px;
+  min-width: 940px;
+}
+.topo nav ul {
+
+}
+
+.topo nav ul li{
+  display: inline;
+  padding: 10px 10px 10px 10px;
+}
