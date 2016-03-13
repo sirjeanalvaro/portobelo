@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Porto Belo - Importação e Exportação</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="unslider/dist/css/unslider.css">
 </head>
 
 <body>
@@ -22,7 +23,11 @@
     </nav>
     <div class="button"></div>
   </section>
-  <section class="slider"></section>
+
+    <div class="slider">
+        <iframe src="full-slider/index.htm" width="100%;"  height="639px" frameborder="0"></iframe>
+    </div>
+
   <section class="options">
 
       <div><img src="assets/img/empresa.png" alt="">
@@ -40,7 +45,12 @@
   <div style="clear:both;">
 
   </div>
-  <footer> bla bla</footer>
+  <footer><p> Porto Belo importação e exportação - Todos os direitos reservados 2016 </p></footer>
+
+  <!-- And the relevant JavaScript -->
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="unslider/src/js/unslider.js"></script> <!-- but with the right path! -->
+  <script>$(function() { $('.my-slider').unslider() })</script>
 
 </body>
 
