@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('gotham-medium_1-webfont.eot');
+    src: local('gotham_mediumregular'), url('gotham-medium_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-medium_1-webfont.woff') format('woff'),
+         url('gotham-medium_1-webfont.ttf') format('truetype'),
+         url('gotham-medium_1-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('gotham-book_1-webfont.eot');
+    src: local('gotham_bookregular'), url('gotham-book_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-book_1-webfont.woff') format('woff'),
+         url('gotham-book_1-webfont.ttf') format('truetype'),
+         url('gotham-book_1-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'gotham_blackregular';
+    src: url('gotham-black-webfont.eot');
+    src: local('gotham_blackregular'), url('gotham-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-black-webfont.woff') format('woff'),
+         url('gotham-black-webfont.ttf') format('truetype'),
+         url('gotham-black-webfont.svg#gotham_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'pere_castorstandard';
+    src: url('perecs_-webfont.eot');
+    src: url('perecs_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('perecs_-webfont.woff') format('woff'),
+         url('perecs_-webfont.ttf') format('truetype'),
+         url('perecs_-webfont.svg#pere_castorstandard') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_ultraregular';
+    src: url('gotham-ultra_0-webfont.eot');
+    src: url('gotham-ultra_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-ultra_0-webfont.woff') format('woff'),
+         url('gotham-ultra_0-webfont.ttf') format('truetype'),
+         url('gotham-ultra_0-webfont.svg#gotham_ultraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

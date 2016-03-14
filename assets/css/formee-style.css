@@ -1,0 +1,168 @@
+/********************************************************************
+Project: Formee - http://www.formeeee.org
+Last Updated:
+Version: 3.1
+Authors: Bernard De Luna - http://www.bernarddeluna.com
+Daniel Araujo - http://www.dnlaraujo.com.br
+Marcello Manso - http://www.marcellomanso.com.br
+********************************************************************
+Style
+********************************************************************/
+.formee fieldset {
+background:#fff;
+/*corner*/
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+/* hover effect */
+.grid-1-12:hover, .grid-2-12:hover, .grid-3-12:hover, .grid-4-12:hover, .grid-5-12:hover, .grid-6-12:hover, .grid-7-12:hover, .grid-8-12:hover, .grid-9-12:hover, .grid-10-12:hover, .grid-11-12:hover, .grid-12-12:hover {}
+.field-button:hover {background:transparent;}
+/* Form legend and titles */
+.formee {font: normal 10px/1.1em Arial,Sans-Serif;}
+.formee p{
+font-family: 'Merriweather Sans',sans-serif;
+font-size: 13px;
+font-weight: 400;
+color: #6f6f6f;
+}
+.formee img{
+margin:0 !important;
+}
+.formee legend, .formee h3 {
+font-size:3em;
+line-height:1.2em;
+letter-spacing: -.035em;
+color:#2b2b2b;
+font-weight: normal;
+}
+/* form elements */
+.formee-lbl, .formee label {
+color:#6f6f6f;
+font-size:1.4em;
+line-height: 1.3em;
+vertical-align:middle;
+}
+.formee-req {
+font-weight: bold;
+font-style:normal;
+color:#020202;
+font-size:1.2em;
+line-height: .85em;
+}
+
+.formee textarea{height: 100px;}
+.formee .formee-txt, .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee textarea, .formee select {
+border-color:#c6c6c6 #dadada #eaeaea;
+background: #fafafa;
+color:#333;
+font-size:1.4em;
+font-family:inherit;
+/*corner*/
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+.formee select {
+border-color:#c6c6c6 #dadada #eaeaea;
+background: #fafafa;
+color:#999;
+}
+.formee .formee-txt:hover, .formee input[type="text"]:hover, .formee input[type="password"]:hover, .formee input[type="file"]:hover, .formee textarea:hover, .formee select:hover {
+color:#666;
+background: #fff none;
+border-color:#FF6600;
+}
+form .formee-txt:focus, .formee input[type="text"]:focus, .formee input[type="password"]:focus, .formee input[type="file"]:focus, .formee textarea:focus, .formee select:focus {
+color:#333;
+background: #fff none;
+border-color:#081369 #081369 #081369;
+outline: 0;
+}
+/* form msg status */
+.formee-msg-info, .formee-msg-warning, .formee-msg-error, .formee-msg-success {
+color:#2b2b2b;
+/*corner*/
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+.formee-msg-info h3, .formee-msg-warning h3, .formee-msg-error h3, .formee-msg-success h3 {
+font-size:2em;
+line-height:1.1em;
+letter-spacing:-.02em;
+padding:0;
+margin:0 0 .3em 0;
+}
+.formee-msg-info {
+background: #d1ecf7 url(../img/form-ic-info.png) no-repeat 12px 23px;
+border-color:#bcdfef;
+}
+.formee-msg-warning {
+background: #fff6bf url(../img/form-ic-warning.png) no-repeat 12px 23px;
+border-color:#fceb77;
+}
+.formee-msg-error {
+background: #fad0d0 url(../img/form-ic-error.png) no-repeat 12px 23px;
+border-color:#f6abab;
+}
+.formee-msg-success {
+background: #e5f8ce url(../img/form-ic-success.png) no-repeat 12px 23px;
+border-color:#d0f1a6;
+}
+.formee-msg-success strong, .formee-msg-success a{color:#62b548;}
+.formee-msg-info strong, .formee-msg-info a {color:#11689e;}
+.formee-msg-warning strong, .formee-msg-warning a {color:#957210;}
+.formee-msg-error strong, .formee-msg-error a {color:#b01717;}
+/* form validation */
+.formee-error {
+border-color: #FAD0D0 !important;
+color: #b01717 !important;
+/* shadow */
+-moz-box-shadow: 0 0 3px 0 rgba(176,23,23,.4);
+-webkit-box-shadow: 0 0 3px 0 rgba(176,23,23,.4);
+box-shadow: 0 0 3px 0 rgba(176,23,23,.4);
+}
+/* form buttons */
+.formee-button, .formee input[type="submit"], .formee input[type="button"], .formee input[type="reset"] {
+float:right;
+font-size:1.4em;
+line-height:1.4em;
+font-weight:bolder;
+text-transform: uppercase;
+letter-spacing: -.015em;
+color:#fff;
+border-color:none;
+background: #505050;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNTI0OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZDE5MGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #FF9900 0%, #FF6600 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF9900), color-stop(100%,#FF6600));
+background: -webkit-linear-gradient(top, #129607 0%,#129607 100%);
+background: -o-linear-gradient(top, #129607 0%,#129607 100%);
+background: -ms-linear-gradient(top, #129607 0%,#129607 100%);
+background: linear-gradient(to bottom, #129607 0%,#129607 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9900', endColorstr='#4d4d4d',GradientType=0 );
+/* corner */
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+/* shadow */
+-moz-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+-webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+}
+.formee-button:hover, .formee input[type="submit"]:hover, .formee input[type="button"]:hover, .formee input[type="reset"]:hover {
+background: #ff5248;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI2NyUiIHN0b3AtY29sb3I9IiNmZjUyNDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2QxOTBlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top, #FF6600 67%, #FF9900 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(67%,#FF6600), color-stop(100%,#FF9900));
+background: -webkit-linear-gradient(top, #0c22cb 67%,#0c22cb 100%);
+background: -o-linear-gradient(top, #0c22cb 67%,#0c22cb 100%);
+background: -ms-linear-gradient(top, #0c22cb 67%,#0c22cb 100%);
+background: linear-gradient(to bottom, #0c22cb 67%,#0c22cb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5248', endColorstr='#FF9900',GradientType=0 );
+/* shadow */
+-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), inset 0 1px 0 0 rgba(255,255,255,.4);
+-webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4);
+box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), inset 0 1px 0 0 rgba(255,255,255,.4);
+} 

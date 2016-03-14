@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Porto Belo - Importação e Exportação</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="unslider/dist/css/unslider.css">
+    <link rel="stylesheet" href="assets/css/formee-structure.css">
+    <link rel="stylesheet" href="assets/css/formee-style.css">
+</head>
+
+<body>
+    <section class="topo">
+
+        <section class="logo"></section>
+
+        <nav>
+            <ul>
+                <li><a href="">PÁGINA INICIAL</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
+                <li><a href="">PRODUTOS</a></li>
+                <li><a href="">CONTATOS</a></li>
+            </ul>
+        </nav>
+        <div class="button"></div>
+    </section>
+
+    <div class="conteudo">
+       <h1>Fale Conosco</h1>
+        <div style="width:50%; height:auto; float:left;">
+            <!-- Começa o Form -->
+            <form method="POST" action="form.php" onSubmit="return validaFrm(this);" name="formulario_contato" id="formulario_contato">
+                <div class="formee">
+                    <div class="grid-12-12">
+                        <span id="conteudo_lblMsg"></span>
+                    </div>
+                    <div class="grid-12-12">
+                        <input type="text" placeholder="Nome" id="nomeremetente" name="nomeremetente">
+                    </div>
+                    <div class="grid-12-12">
+                        <input type="text" placeholder="E-mail" id="emailremetente" name="emailremetente">
+                    </div>
+                    <div class="grid-6-12">
+                        <input type="text" onkeyup="formataTelefone(this,event);" placeholder="Telefone" id="telefone" maxlength="16" name="telefone">
+                    </div>
+                    <div class="grid-6-12">
+                        <input type="text" onkeyup="formataCEP(this,event);" placeholder="CEP" id="cep" maxlength="9" name="cep">
+                    </div>
+                    <div class="grid-6-12">
+                        <input type="text" placeholder="Endereço" id="endereco" name="endereco">
+                    </div>
+                    <div class="grid-6-12">
+                        <input type="text" placeholder="Bairro" id="bairro" name="bairro">
+                    </div>
+                    <div class="grid-6-12">
+                        <input type="text" onkeyup="formataCIDADE(this,event);" id="cidade" placeholder="Cidade" name="cidade" />
+                    </div>
+                    <div class="grid-6-12">
+                        <input type="text" onkeyup="formataESTADO(this,event);" id="estado" placeholder="Estado" name="estado" />
+                    </div>
+                    <div class="grid-12-12">
+                        <textarea placeholder="Mensagem" id="menssagem" cols="20" rows="2" name="menssagem"></textarea>
+                    </div>
+                    <div class="grid-2-12">
+                        <input type="submit" id="conteudo_btnEnviar" value="Enviar" name="ctl00$conteudo$btnEnviar">
+                    </div>
+                </div>
+            </form>
+            <!-- Termino do Form -->
+        </div>
+        <div style="width:40%; float:right;  height:300px;">
+            <h1>+55 (049) 3644-1281</h1>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contatos@portobeloimpexp.com.br</h2>
+            <p style="font-family:'Ailerons', sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rodovia Br 163 - KM11 - S/N <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barracão - Paraná - Brasil
+            </p>
+            <p><iframe style="margin-left:-10px; margin-top:10px;" src="https://www.google.com/maps/d/embed?mid=zNrYpOYwnHlw.katlqos_egU4" frameborder="0" width="40%" height="250"></iframe></p>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    <footer>
+        <p> Porto Belo importação e exportação - Todos os direitos reservados 2016 </p>
+    </footer>
+
+    <!-- And the relevant JavaScript -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="unslider/src/js/unslider.js"></script>
+    <!-- but with the right path! -->
+    <script>
+        $(function () {
+            $('.my-slider').unslider()
+        })
+    </script>
+
+</body>
+
+</html>

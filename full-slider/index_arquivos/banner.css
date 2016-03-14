@@ -1,0 +1,1040 @@
+/* banner */
+
+#banner {
+    width: 99, 9%;
+    height: 639px;
+    position: relative;
+    z-index: 1;
+    min-width: 940px;
+    margin: 0 auto;
+    clear: both;
+}
+#banner #content-image {
+    width: auto;
+    text-align: center;
+    position: relative;
+}
+#banner #content-image li {
+    width: 100%;
+    min-width: 380px;
+    height: 639px;
+    display: none;
+    background: no-repeat 50% 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#banner #content-image li.trans {
+    display: block;
+    position: absolute !important;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+#banner #content-image li.selected {
+    display: block;
+    z-index: 2;
+}
+#banner #content-image li.video {
+    position: relative;
+    background-color: #000;
+}
+#banner #content-image li.video > span.grid-video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../imagens/icons/pixel-white.png) left top;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+#banner #content-image li.video #example_video_1 {
+    width: 100%;
+    height: 639px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    overflow: hidden;
+}
+#banner #content-image li > img {
+    width: 100%;
+    min-width: 380px;
+}
+#banner #content-image li .banner-center {
+    height: 675px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: left;
+    color: #fff;
+}
+#banner #content-image li .banner-center.relative {
+    position: relative;
+    z-index: 50;
+}
+#banner #content-image li .banner-center h2.title {
+    color: #fff;
+}
+#banner #content-image li .box-left {
+    float: left;
+    max-width: 40%;
+    height: 100%;
+    z-index: 10;
+}
+#banner #content-image li .banner-center .box-left p {
+    line-height: 150%;
+}
+#banner #content-image li .banner-center .box-right {
+    float: right;
+    max-width: 55%;
+    z-index: 10;
+}
+#banner #content-image li .banner-center .box-left-bottom {
+    width: auto;
+    max-width: 42%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    z-index: 10;
+}
+#banner #content-image li .banner-center .max-50 {
+    max-width: 50%;
+}
+#banner #content-image li .banner-center .max-40 {
+    max-width: 40%;
+}
+#banner #content-image li .banner-center .max-35 {
+    max-width: 35%;
+}
+#banner #content-image li .banner-center .center-right {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    margin-top: -90px;
+}
+#banner #content-image li .banner-center .box {
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+#banner #content-image li.animated .banner-center .box {
+    visibility: visible;
+    opacity: 1.0;
+    -moz-opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+/* Banner / Animation Default */
+
+#banner #content-image li .transform img {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    -webkit-transform: scale(1.3) skew(20deg);
+    -moz-transform: scale(1.3) skew(20deg);
+    -ms-transform: scale(1.3) skew(20deg);
+    transform: scale(1.3) skew(20deg);
+}
+#banner #content-image li.animated .transform img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/* Banner / Case Simonetto */
+
+#banner #content-image li.simonetto {
+    
+}
+#banner #content-image li.simonetto .box-left {
+    margin-top: 120px;
+}
+#banner #content-image li.simonetto .box-right {
+    min-width: 250px;
+    margin-right: -180px;
+    text-align: center;
+}
+#banner #content-image li.simonetto .box-right img.logo-simonetto {
+    margin-top: 90px;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+/* animated */
+
+#banner #content-image li.simonetto.animated .box-left {
+    margin-top: 0;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -ms-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#banner #content-image li.simonetto.animated .box-right {
+    margin-right: 130px;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+#banner #content-image li.simonetto.animated .box-right img.logo-simonetto {
+    margin-top: 0;
+    opacity: 1.0;
+    -moz-opacity: 1.0;
+    filter: alpha(opacity=100);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-delay: 0.7s;
+    -moz-transition-delay: 0.7s;
+    -ms-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+}
+/* Banner / Case valcredi */
+
+#banner #content-image li.valcredi {
+    background-image: url(../img/banner1.jpg);
+    background-color: #00323c;
+}
+#banner #content-image li.valcredi .box-right {
+    position: relative;
+    z-index: 2;
+}
+#banner #content-image li.valcredi .box-left {
+    max-height: 50% !important;
+    height: auto;
+    text-align: center;
+    margin-top: -40px;
+    margin-right: -30px;
+}
+#banner #content-image li.valcredi .box-left h2 {
+    color: #fff;
+    font-size: 3em;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    display: block;
+}
+#banner #content-image li.valcredi .box-left h2 .bord {
+    color: #00a295;
+    font-family: 'gotham_ultraregular', Tahoma, Helvetica;
+    font-weight: normal;
+}
+#banner #content-image li.valcredi .box-left a.conheca {
+    color: #fff;
+    background-color: #00a295;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+#banner #content-image li.valcredi .box-left a.conheca:hover {
+    color: #00a295;
+    background-color: #000;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#banner #content-image li.valcredi span.icon {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    visibility: hidden;
+}
+#banner #content-image li.valcredi span.icon.mini {
+    width: 180px;
+    top: 0px;
+    left: -100px;
+}
+#banner #content-image li.valcredi span.icon.media {
+    width: 287px;
+    bottom: 0px;
+    right: -120px;
+}
+#banner #content-image li.valcredi span.icon img {
+    width: 100%;
+    display: block;
+}
+#banner #content-image li.valcredi span.icon.mini img {
+    margin-top: -30px;
+}
+/* animated */
+
+#banner #content-image li.valcredi.animated span.icon {
+    visibility: visible;
+    -webkit-animation: showScale 2.0s 1 ease-out;
+    -moz-animation: showScale 2.0s 1 ease-out;
+    -o-animation: showScale 2.0s 1 ease-out;
+    animation: showScale 2.0s 1 ease-out;
+}
+/* Banner / Case Chapecoense */
+
+#banner #content-image li.chapecoense {
+    background: url(../imagens/case/chapecoense/background.jpg) no-repeat 50% 0;
+    position: relative;
+}
+#banner #content-image li.chapecoense .box-left {
+    width: 60%;
+    text-align: center;
+    margin-top: -30px;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+#banner #content-image li.chapecoense .box-left div.slogan {
+    margin-bottom: 50px;
+    margin-top: 120px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#banner #content-image li.chapecoense .box-left div.slogan img,
+#banner #content-image li.chapecoense .box-left div.slogan h3 {
+    display: inline-block;
+    vertical-align: middle;
+    *float: left;
+    *display: block;
+}
+#banner #content-image li.chapecoense .box-left div.slogan h3 {
+    line-height: 140%;
+    color: #fff;
+    text-align: left;
+    font-family: 'gotham_bookregular', Tahoma, Helvetica;
+    margin-left: 20px;
+    padding: 10px 0 10px 20px;
+    border-left: 1px solid #fff;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+#banner #content-image li.chapecoense .box-left div.slogan h3 strong {
+    font-family: 'gotham_ultraregular', Tahoma, Helvetica;
+    font-size: 1.3em;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+}
+#banner #content-image li.chapecoense .box-left h2 {
+    display: block;
+    font-family: 'gotham_ultraregular', Tahoma, Helvetica;
+    color: #fff;
+    letter-spacing: 0.03em;
+    font-size: 3.6em;
+    line-height: 90%;
+}
+#banner #content-image li.chapecoense .box-left h2 > span {
+    display: block;
+    text-align: left;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+#banner #content-image li.chapecoense .box-left h2 > span.text2 {
+    text-align: right;
+}
+#banner #content-image li.chapecoense .box-left a.link {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-decoration: none;
+}
+#banner #content-image li.chapecoense .transform img {
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    -webkit-transform: scale(0.7) skew(-20deg);
+    -moz-transform: scale(0.7) skew(-20deg);
+    -ms-transform: scale(0.7) skew(-20deg);
+    transform: scale(0.7) skew(-20deg);
+}
+/* :animated; */
+
+#banner #content-image li.chapecoense.animated .transform img {
+    opacity: 1.0;
+    -moz-opacity: 1.0;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+#banner #content-image li.chapecoense.animated .box-left {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+#banner #content-image li.chapecoense.animated .box-left div.slogan {
+    margin-top: 0;
+}
+#banner #content-image li.chapecoense.animated .box-left div.slogan h3,
+#banner #content-image li.chapecoense.animated .box-left h2 span {
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=10);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#banner #content-image li.chapecoense.animated .box-left h3 {
+    margin-left: 20px;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+#banner #content-image li.chapecoense.animated .box-left h2 span {
+    opacity: 1.0;
+    -moz-opacity: 1.0;
+    filter: alpha(opacity=100);
+    text-align: center;
+}
+#banner #content-image li.chapecoense.animated .box-left h2 span.text2 {
+    webkit-transition-delay: 0.7s;
+    -moz-transition-delay: 0.7s;
+    -ms-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+}
+#banner #content-image li.chapecoense.animated .box-left h2 span.text3 {
+    webkit-transition-delay: 1.2s;
+    -moz-transition-delay: 1.2s;
+    -ms-transition-delay: 1.2s;
+    transition-delay: 1.2s;
+}
+/* Banner / Grandes ideias || clientes */
+
+#banner #content-image li.grandes-ideias {
+    background-color: #ebf7e0;
+    -webkit-box-shadow: 0 -10px 30px 0 #D1E0BF inset;
+    -moz-box-shadow: 0 -10px 30px 0 #D1E0BF inset;
+    -ms-box-shadow: 0 -10px 30px 0 #D1E0BF inset;
+    box-shadow: 0 -10px 30px 0 #D1E0BF inset;
+}
+#banner #content-image li.grandes-ideias .box-left,
+#banner #content-image li.clientes .box-left {
+    max-width: 50% !important;
+    margin-left: -100px;
+}
+#banner #content-image li .box.animate-text h2 {
+    font-size: 62px;
+}
+#banner #content-image li .box.animate-text h2 span.light {
+    font-family: 'gotham_bookregular', Tahoma, Helvetica;
+}
+#banner #content-image li .box.animate-text h2 strong {
+    font-size: 1.3em;
+    line-height: 0.95em;
+    letter-spacing: 0.04em;
+    font-family: 'gotham_ultraregular', Tahoma, Helvetica;
+}
+#banner #content-image li .box.animate-text h2 strong,
+#banner #content-image li .box.animate-text h2 strong span.last {
+    display: block;
+    text-indent: -50px;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+#banner #content-image li.grandes-ideias .img-conceito,
+#banner #content-image li.clientes .img-conceito {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 10%;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+#banner #content-image li.grandes-ideias .img-conceito,
+#banner #content-image li.grandes-ideias .img-conceito img,
+#banner #content-image li.clientes .img-conceito img {
+    width: auto;
+    height: 100%;
+    display: block;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+#banner #content-image li.grandes-ideias .img-conceito img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#banner #content-image li.clientes .img-conceito img {
+    -webkit-transform: scale(0.8) skew(-20deg);
+    -moz-transform: scale(0.8) skew(-20deg);
+    -ms-transform: scale(0.8) skew(-20deg);
+    transform: scale(0.8) skew(-20deg);
+}
+/* Banner / Clientes */
+
+#banner #content-image li.clientes {
+    background: #a4cdbc url(../imagens/case/clientes/background.jpg) no-repeat 50% 0;
+}
+#banner #content-image li.clientes .box-left h2 {
+    font-size: 50px;
+    color: #fff;
+}
+#banner #content-image li.clientes .img-conceito {
+    top: 5%;
+    height: 90%;
+}
+/* Banner / Case Aplicações Convergentes */
+
+#banner #content-image li.aplicacoes {
+    background-image: url(../imagens/case/aplicacoes/bg.jpg);
+    background-color: #14b595;
+}
+#banner #content-image li.aplicacoes .box.animate-text h2 {
+    width: 65%;
+    font-size: 3em;
+    color: #fff;
+}
+#banner #content-image li.aplicacoes .box.animate-text h2 span {
+    display: block;
+}
+#banner #content-image li.aplicacoes .box .compativel-com {
+    margin-top: 20px;
+}
+#banner #content-image li.aplicacoes .box .compativel-com div.wrap {
+    float: left;
+    margin-right: 15px;
+}
+#banner #content-image li.aplicacoes .box .compativel-com div.wrap p {
+    line-height: 70px;
+}
+#banner #content-image li.aplicacoes .img-conceito {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    right: -120px;
+    top: 0;
+    visibility: hidden;
+}
+#banner #content-image li.aplicacoes.animated img {
+    visibility: visible;
+    -webkit-animation: showScale 2.0s 1 ease-out;
+    -moz-animation: showScale 2.0s 1 ease-out;
+    -o-animation: showScale 2.0s 1 ease-out;
+    animation: showScale 2.0s 1 ease-out;
+}
+/* animated ( Grandes ideias / clientes ) */
+
+#banner #content-image li.grandes-ideias.animated .box.animate-text,
+#banner #content-image li.clientes.animated .box.animate-text {
+    margin-left: 0;
+    -webkit-transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -ms-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+#banner #content-image li.animated .box.animate-text,
+#banner #content-image li.animated .box.animate-text strong,
+#banner #content-image li.animated .box.animate-text strong span.last,
+#banner #content-image li.grandes-ideias.animated .img-conceito,
+#banner #content-image li.clientes.animated .img-conceito {
+    text-indent: 0;
+    opacity: 1.0;
+    -moz-opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+#banner #content-image li.grandes-ideias.animated .img-conceito {
+    margin-left: -10%;
+}
+#banner #content-image li.grandes-ideias.animated .img-conceito,
+#banner #content-image li.clientes.animated .img-conceito,
+#banner #content-image li.grandes-ideias.animated .img-conceito img,
+#banner #content-image li.clientes.animated .img-conceito img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+#banner #content-image li.animated .box.animate-text strong {
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
+}
+#banner #content-image li.animated .box.animate-text strong span.last {
+    -webkit-transition-delay: 1.3s;
+    -moz-transition-delay: 1.3s;
+    -ms-transition-delay: 1.3s;
+    transition-delay: 1.3s;
+}
+#banner #content-image li.valcredi .box-right img,
+#banner #content-image li{background: url(../img/banner2.jpg);}
+#banner #content-image li.simonetto .box-left img,
+#banner #content-image li.simonetto .box-right img {
+    width: 100%;
+    display: block;
+}
+#banner #content-image li.simonetto.animated .box-right,
+#banner #content-image li.chapecoense.animated .box-right {
+    width: 32%;
+    min-width: 150px;
+    max-width: 220px;
+    margin-top: -20%;
+    margin-right: 0;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    display: block;
+}
+/* Chapecoense */
+
+#banner #content-image li.chapecoense .box-left {
+    width: 65%;
+    max-width: 100%;
+    margin-top: -10px;
+    position: static;
+}
+#banner #content-image li.chapecoense .box-left div.slogan {
+    margin-bottom: 30px;
+}
+#banner #content-image li.chapecoense .box-left h2 {
+    font-size: 2em;
+}
+#banner #content-image li.chapecoense.animated .box-right {
+    width: 65%;
+    right: -7%;
+    max-width: 420px;
+}
+#banner #content-image li.chapecoense .box-right img {
+    width: 100%;
+    display: block;
+}
+/* Banner / Case valcredi */
+
+#banner #content-image li.valcredi .box-left {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+#banner #content-image li.valcredi .box-left h2 {
+    font-size: 1.8em;
+}
+#banner #content-image li.valcredi .box-left a.conheca {
+    padding: 8px 25px;
+    font-size: 1.2em;
+}
+/* Banner / Case Aplicações */
+
+#banner #content-image li.aplicacoes .box.animate-text h2 {
+    width: 100%;
+    font-size: 2em;
+}
+#banner #content-image li.aplicacoes .box .compativel-com div.wrap.text {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-right: 0;
+}
+#banner #content-image li.aplicacoes .box .compativel-com div.wrap p {
+    line-height: normal;
+}
+#banner #content-image li.aplicacoes .img-conceito {
+    right: -40px;
+}
+#banner #content-image li.aplicacoes .img-conceito img {
+    height: 100%;
+}
+/* Grandes ideias / Clientes */
+
+#banner #content-image li.grandes-ideias.animated .img-conceito {
+    margin-left: 0px;
+}
+#banner #content-image li.grandes-ideias .box.animate-text h2 {
+    font-size: 50px;
+}
+#banner #content-image li.clientes .box-left h2 {
+    font-size: 35px;
+}
+}
+@media all and (max-width: 680px) {
+    #banner #content-image li.simonetto,
+    #banner #content-image li.chapecoense.animated {
+        -webkit-transition: background 0.4s ease-out;
+        -moz-transition: background 0.4s ease-out;
+        -ms-transition: background 0.4s ease-out;
+        transition: background 0.4s ease-out;
+    }
+    /* Simonetto */
+    #banner #content-image li.simonetto.animated {
+        background-position: 0 0;
+    }
+    #banner #content-image li.simonetto .box-left {
+        height: auto;
+        padding-top: 60px;
+    }
+    #banner #content-image li.simonetto .box-left img {
+        margin-left: -60px;
+    }
+    /* Chapecoense */
+    #banner #content-image li.chapecoense.animated {
+        background-position: 72% 0;
+    }
+    #banner #content-image li.chapecoense.animated .box {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        float: none;
+    }
+    #banner #content-image li.chapecoense.animated .box-left {
+        margin-top: -20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    #banner #content-image li.chapecoense.animated .box-left a.link {
+        display: none;
+    }
+    #banner #content-image li.chapecoense.animated .box-left h2 {
+        width: 45%;
+        line-height: 130%;
+        margin-top: -15px;
+        position: absolute;
+        top: 35px;
+        right: 0;
+    }
+    #banner #content-image li.chapecoense.animated .box-left h2 span {
+        text-align: right;
+    }
+    #banner #content-image li.chapecoense.animated .box-left h2,
+    #banner #content-image li.chapecoense.animated .box-left div.slogan {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #banner #content-image li.chapecoense.animated .box-left div.slogan {
+        width: 60%;
+        text-align: left;
+    }
+    #banner #content-image li.chapecoense.animated .box-right {
+        max-width: 320px;
+        position: static;
+        top: auto;
+        right: auto;
+        margin: 0 auto;
+    }
+    #banner #content-image li.chapecoense.animated .box-right img {
+        width: 100%;
+        display: block;
+    }
+    /* Banner / Case valcredi */
+    #banner #content-image li.valcredi .box-right,
+    #banner #content-image li.valcredi .box-left {
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        text-align: center;
+    }
+    #banner #content-image li.valcredi .box-left img,
+    #banner #content-image li.valcredi .box-right img {
+        max-width: 260px;
+        text-align: center;
+        display: inline;
+    }
+    #banner #content-image li.valcredi .box-left h2 {
+        font-size: 1.3em;
+        margin-top: -10px;
+    }
+    #banner #content-image li.valcredi span.icon.mini {
+        left: -30px;
+    }
+    #banner #content-image li.valcredi span.icon.media {
+        display: none;
+    }
+    #banner #content-image li.valcredi .box-left a.conheca {
+        padding: 12px 25px;
+        font-size: 1em;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+    }
+    #banner #content-image li.grandes-ideias.animated .img-conceito {
+        margin-left: 0px;
+    }
+    #banner #content-image li.grandes-ideias .box.animate-text h2,
+    #banner #content-image li.clientes .box-left h2 {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+    /* Banner / Case Aplicações */
+    #banner #content-image li.aplicacoes .img-conceito {
+        width: 85%;
+        right: -20px;
+    }
+    #banner #content-image li.aplicacoes .box-left {
+        max-width: 60%;
+        position: relative;
+        z-index: 9;
+    }
+    #banner #content-image li.aplicacoes .box .compativel-com div.wrap {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+    #banner #content-image li.aplicacoes .box .compativel-com div.wrap.text {
+        height: auto;
+    }
+    #banner #content-image li.aplicacoes .box .compativel-com div.wrap img {
+        width: 100%;
+    }
+}
+@media all and (max-width: 420px) {
+    /* Chapecoense */
+    #banner #content-image li.chapecoense .box-left h2,
+    #banner #content-image li.valcredi .box-left img {
+        display: none;
+    }
+    /* Banner / Case valcredi */
+}
+/* controles-banner */
+
+#meio #content-controls {
+    height: 120px;
+    position: absolute;
+    z-index: 55;
+    width: 100%;
+    min-width: 940px;
+}
+#meio .container {
+    margin: 0 auto;
+    width: 940px;
+    height: 120px;
+    z-index: 55;
+    background: url(../img/dot-mask.png) right 34px no-repeat;
+}
+#meio .xyz {
+    width: 95px;
+    height: 100px;
+    margin: 0 0 0 810px;
+    position: absolute;
+    border: 0 solid #C00;
+    z-index: 55;
+}
+#banner #content-controls a {
+    width: 12px;
+    height: 12px;
+    margin: 55px 0 0 0;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #666;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-left: 5px;
+    overflow: hidden;
+    vertical-align: top;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+html.no-borderradius #banner #content-controls a {
+    margin-left: 1px;
+}
+#banner #content-controls a > span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 22px;
+    border: solid 3px #CCC;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-indent: -9999px;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+#banner #content-controls a:nth-child(2n) {
+    background-color: trasnparte;
+}
+#banner #content-controls a:nth-child(2n) > span {
+    border: solid 4px #dd1414;
+}
+#banner #content-controls a:hover {
+    background-color: #efefef;
+}
+#banner #content-controls a.selected {
+    background-color: transparent;
+    border: 2px solid #a50000;
+}
+#banner #content-controls a:hover > span,
+#banner #content-controls a.selected > span {
+    width: 6px;
+    height: 6px;
+    margin: 20px;
+    border: solid 7px #333;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+#banner #content-controls a.selected > span {
+    border: solid 7px #fff;
+}
+@-o-keyframes showScale {
+    0%, 70% {
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    85% {
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+    }
+}
+@-ms-keyframes showScale {
+    0%, 70% {
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    85% {
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+    }
+}
+@-webkit-keyframes showScale {
+    0%, 70% {
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    85% {
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+    }
+}
+@-moz-keyframes showScale {
+    0%, 70% {
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    85% {
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+    }
+}
+@keyframes showScale {
+    0%,
+    70% {
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    85% {
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+        -webkit-transform: scale(1.1) rotate(7deg);
+        -moz-transform: scale(1.1) rotate(7deg);
+        -ms-transform: scale(1.1) rotate(7deg);
+        transform: scale(1.1) rotate(7deg);
+    }
+}
+#banner #meio {
+    width: 100%;
+    height: 110px;
+    background: url(../img/meio.png) center center no-repeat;
+    position: absolute;
+    margin: -110px 0 0 0;
+    z-index: 54;
+    min-width: 940px;
+}
